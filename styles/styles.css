@@ -1,0 +1,62 @@
+/* Reset default margin and padding */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background image */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for boxes */
+.container {
+    display: flex;
+    flex-direction: row; /* Display boxes horizontally */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Box styling */
+.box {
+    width: 525px; /* Adjust as needed */
+    height: 525px; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border: 2px solid #000; /* Black border */
+    margin: 10px; /* Margin around each box */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Text above each box */
+.box p {
+    margin-top: 20px; /* Adjust spacing between text and box */
+}
+
+/* Button styling */
+.box button {
+    margin-top: 20px; /* Adjust spacing between button and box */
+    margin-bottom: 15px;
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for button */
+.box button:hover {
+    background-color: #45a049; /* Darker green background color on hover */
+}
